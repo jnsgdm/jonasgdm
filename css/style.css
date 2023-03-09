@@ -1,0 +1,162 @@
+/* padrao */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    /* background: linear-gradient(#00111d 35%,#002036 65%); */
+    background-color: #00111d;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    /* padding: 7em 0; */
+}
+
+a {
+    text-decoration: none; 
+}
+
+/* nav */
+header {
+    width: 100%;
+    /* position: fixed; */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5em;
+}
+
+.links {
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+}
+
+.links a { 
+    color: azure;
+}
+
+.links a:hover { 
+    color: purple;
+}
+
+.links li {
+    padding: 0px 20px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 125%;
+}
+
+.logo .first {
+    color: azure;
+}
+
+.logo .second {
+    color: #7F8487;
+}
+
+.line-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line {
+    width: 20%;
+    border-bottom: 1px solid azure;
+}
+
+.btn-nav-mobile{
+    display: none;
+}
+
+.burguer-btn {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* parallax */
+.parallax {
+    background-image: url("../public/stars.png");
+    width: 100%;
+    height: 80vh;
+    background-attachment: fixed;
+}
+
+/* home */
+main {
+    background: #00111d;
+}
+
+/* media queries */
+@media screen and (max-width: 700px) {
+    .burguer-btn {
+        display: block;
+    }
+
+    header {
+        width: 25vw;
+        height: 100%;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        height: 100%;
+        background-color: #2B2B2B;
+    }
+
+    .links {
+        margin-top: 0.8em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links li {
+        padding: 20px 0;
+    }
+
+    .btn-nav-mobile {
+        display: block;
+    }
+
+    .line {
+        display: none;
+    }
+}
+
+.teste {
+    margin-top: -40%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+}
+
+#seila{
+    border-radius: 100%;
+}
