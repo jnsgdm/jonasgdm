@@ -6,11 +6,16 @@
 
 var checkNav = false
 function handleNavMobile(value) {
-    const navbar = document.querySelector('#nav-head');
+    const navLinks = document.querySelector('#nav-links');
     checkNav = !checkNav;
     if(checkNav){
-        navbar.setAttribute('class','hide');
+        navLinks.style.left = '0';
     }else {
-        navbar.setAttribute('class','show');
+        navLinks.style.left = '-100%';
     }
+}
+
+function handleHideNav(){
+    const navLinks = document.querySelector('#nav-links');
+    navLinks.style.left = '-100%';
 }

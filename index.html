@@ -7,51 +7,66 @@
     <title>Jonas D'angelo</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <body>
-    <header id="nav-head" class="nav-container">
+    <header class="nav-container">
         <nav class="nav">
             <a href="" class="logo">
                 <span class="first">Jonas</span>
                 <span class="second">D'angelo</span>
             </a>
-            <ul class="links">
+
+            <i onclick="handleNavMobile()" class='bx bx-menu' id="burguer"></i>
+
+            <ul class="links" id="nav-links" >
                 <li>
-                    <a href="#about">Sobre</a>
+                    <a href="#about" onclick="handleHideNav">Sobre</a>
                 </li>
         
                 <li>
-                    <a href="#projects">Projetos</a>
+                    <a href="#projects" onclick="handleHideNav">Projetos</a>
                 </li>
         
                 <li>
-                    <a href="#skills">Habilidades</a>
+                    <a href="#skills" onclick="handleHideNav">Habilidades</a>
                 </li>
         
                 <li>
-                    <a href="#contact">Contato</a>
+                    <a href="#contact" onclick="handleHideNav">Contato</a>
                 </li>
-                <button class="btn-nav-mobile" onclick="handleNavMobile()">
-                    FECHAR
-                </button>
             </ul>
         </nav>
-        <!-- <div class="line-container">
-            <div class="line"></div>
-            <div class="line"></div>
-        </div> -->
     </header>  
-    <button onclick="handleNavMobile()" class="burguer-btn">
-        ABRIR
-    </button>
-    <section class="parallax">
+
+    <main>
+        <section class="container home">
+            <div class="home-presentation">
+                <div class="home-title">
+                    <h1>Jonas D'angelo</h1>
+                    <span>Sou um desenevolvedor de softwares, com o foco em aplicações web e automação de pequenas tarefas.</span>
+                </div>
+                <button>Download CV</button>
+                <ul class="my-links">
+                    <li><a href=""><i class='bx bxl-linkedin-square' ></i></a></li>
+                    <li><a href=""><i class='bx bxl-github' ></i></a></li>
+                </ul>
+            </div>
+            <img src="./public/perfil1.png" id="seila">
+        </section>
+    
+        <section class="container about" id="about">
+            <h3>Sobre mim</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, a error! Autem dolor illo laudantium dignissimos commodi repellat quisquam nostrum repudiandae maiores dolore nam itaque, quo culpa veniam accusamus quis!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, a error! Autem dolor illo laudantium dignissimos commodi repellat quisquam nostrum repudiandae maiores dolore nam itaque, quo culpa veniam accusamus quis!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, a error! Autem dolor illo laudantium dignissimos commodi repellat quisquam nostrum repudiandae maiores dolore nam itaque, quo culpa veniam accusamus quis!</p>
+        </section>
         
-    </section>
-   <section class=" teste">
-        <h3>EM DESENVOLVIMENTO</h3>
-        <img src="./public/perfil1.png" id="seila">
-   </section>
-   <section class="parallax">
-    </section>
+        <sec class="container projects">
+
+        </sec>
+    </main>
     <script src="./js/index.js"></script>
 </body>
 </html>
