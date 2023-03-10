@@ -156,13 +156,13 @@ header {
     justify-content: center;
     align-items: center;
     color: azure;
-    width: 100%;
+    width: 90vw;
 }
 
 .home-presentation {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 100%;
 }
 
 #seila {
@@ -172,7 +172,7 @@ header {
 
 .home-presentation button {
     padding: 1.2em;
-    width: 30%;
+    width: 45%;
     font-weight: bold;
     border-radius: 1.2em;
     cursor: pointer;
@@ -199,6 +199,7 @@ header {
 
 .home-title {
     margin-bottom: 1em;
+    max-width: 100%;
 }
 
 .about {

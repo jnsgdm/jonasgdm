@@ -18,4 +18,5 @@ function handleNavMobile(value) {
 function handleHideNav(){
     const navLinks = document.querySelector('#nav-links');
     navLinks.style.left = '-100%';
+    console.log("teste cu");
 }
