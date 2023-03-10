@@ -11,9 +11,8 @@
 <body>
     <header class="nav-container">
         <nav class="nav">
-            <a href="" class="logo">
-                <span class="first">Jonas</span>
-                <span class="second">D'angelo</span>
+            <a href="#home" class="logo">
+                Jonas
             </a>
 
             <i onclick="handleNavMobile()" class='bx bx-menu' id="burguer"></i>
@@ -39,9 +38,9 @@
     </header>  
 
     <main>
-        <section class="container home">
+        <section class="container home" id="home">
             <div class="home-presentation">
-                <div class="home-title">
+                    <div class="home-title">
                     <h1>Jonas D'angelo</h1>
                     <span>Sou um desenevolvedor de softwares com o foco em aplicações web e automação de pequenas tarefas.</span>
                 </div>
@@ -53,20 +52,36 @@
             </div>
             <img src="./public/perfil1.png" id="seila">
         </section>
-    
+        
         <section class="container about" id="about">
-            <h3>Sobre mim</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, a error! Autem dolor illo laudantium dignissimos commodi repellat quisquam nostrum repudiandae maiores dolore nam itaque, quo culpa veniam accusamus quis!</p>
+            <h3>SOBRE MIM</h3>
             <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, a error! Autem dolor illo laudantium dignissimos commodi repellat quisquam nostrum repudiandae maiores dolore nam itaque, quo culpa veniam accusamus quis!</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, a error! Autem dolor illo laudantium dignissimos commodi repellat quisquam nostrum repudiandae maiores dolore nam itaque, quo culpa veniam accusamus quis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, a error! Autem dolor illo laudantium dignissimos commodi repellat quisquam nostrum repudiandae maiores dolore nam itaque, quo culpa veniam accusamus quis!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, a error! Autem dolor illo laudantium dignissimos commodi repellat quisquam nostrum repudiandae maiores dolore nam itaque, quo culpa veniam accusamus quis!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, a error! Autem dolor illo laudantium dignissimos commodi repellat quisquam nostrum repudiandae maiores dolore nam itaque, quo culpa veniam accusamus quis!</p>
         </section>
         
-        <sec class="container projects">
-
-        </sec>
+        <section class="container project" id="projects">
+            <h3>PROJETOS RECENTES</h3>
+            <div class="project-card">
+                <img src="./public/teste.jpg" class="img-project">
+                <div class="desc-project">
+                     <h4>Calculadora Basal</h4>
+                     <p class="tex">
+                        Aplicação desenvolvida em React.js que tem como objetivo calcular a taxa de metabolismo basal do usuário.
+                    </p>
+                     <a href="" class="btn-card-project">
+                        Ver Projeto <i class='bx bx-link-alt'></i>
+                     </a>
+                </div>
+             </div>
+        </section>
     </main>
+    <footer>
+        <p>Jonas D'angelo&copy;</p>
+    </footer>
     <script src="./js/index.js"></script>
 </body>
 </html>

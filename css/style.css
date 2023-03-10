@@ -75,14 +75,7 @@ header {
 .logo {
     font-weight: bold;
     font-size: 125%;
-}
-
-.logo .first {
     color: #fff;
-}
-
-.logo .second {
-    color: #7F8487;
 }
 
 .line-container {
@@ -150,13 +143,38 @@ header {
         align-items: center;
         text-align: center;
     }
+
+    .project-card {
+        flex-direction: column;
+    }
+
+    .img-project{
+        margin-left: 0;
+    }
+
+    .text-project{
+        max-width: 100%;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 80%;
+    padding: 3.2em;
 }
 
 .home {
     justify-content: center;
     align-items: center;
     color: azure;
-    width: 90vw;
+    width: 85vw;
 }
 
 .home-presentation {
@@ -167,7 +185,6 @@ header {
 
 #seila {
     border-radius: 20em;
-    max-width: 100vw;
 }
 
 .home-presentation button {
@@ -202,10 +219,58 @@ header {
     max-width: 100%;
 }
 
+/* .about{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
 .about {
+    display: flex;
+    padding: 4em 2em;
     flex-direction: column;
     width: 90vw;
     height: 100%;
     background-color: #002036;
     border-radius: 1.2em;
+    transition: all .5s;
+}
+
+.project {
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card {
+    display: flex;
+    width: 90vw;
+    padding: 2em;
+    justify-content: center;
+}
+
+.desc-project{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: #002036;
+    padding: 2em;
+    border-radius: 0  2em 2em 0;
+}
+
+.btn-card-project{
+    margin-top: 40%;
+    padding: 1.2em;
+    width: 45%;
+    border-radius: 1.2em;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bx-link-alt {
+    color: #000;
+    font-size: 1.4em;
 }
