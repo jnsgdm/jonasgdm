@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonas D'angelo</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <script src="./js/swiper-bundle.min.js"></script>   
+
 </head>
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <body>
     <header class="nav-container">
         <nav class="nav">
@@ -40,7 +43,7 @@
     <main>
         <section class="container home" id="home">
             <div class="home-presentation">
-                    <div class="home-title">
+                <div class="home-title">
                     <h1>Jonas D'angelo</h1>
                     <span>Sou um desenevolvedor de softwares com o foco em aplicações web e automação de pequenas tarefas.</span>
                 </div>
@@ -62,26 +65,52 @@
                 <br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, a error! Autem dolor illo laudantium dignissimos commodi repellat quisquam nostrum repudiandae maiores dolore nam itaque, quo culpa veniam accusamus quis!</p>
         </section>
-        
+
         <section class="container project" id="projects">
             <h3>PROJETOS RECENTES</h3>
-            <div class="project-card">
-                <img src="./public/easytodo.jpg" class="img-project">
-                <div class="desc-project">
-                     <h4>Calculadora Basal</h4>
-                     <p class="tex">
-                        Aplicação desenvolvida em React.js que tem como objetivo calcular a taxa de metabolismo basal do usuário.
-                    </p>
-                     <a href="" class="btn-card-project">
-                        Ver Projeto <i class='bx bx-link-alt'></i>
-                     </a>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <img src="./public/easytodo.jpg" class="img-project">
+                            <div class="desc-project">
+                                <h4>Calculadora Basal</h4>
+                                <p class="tex">
+                                    Aplicação desenvolvida em React.js que tem como objetivo calcular a taxa de metabolismo basal do usuário.
+                                </p>
+                                <a href="" class="btn-card-project">
+                                    Ver Projeto <i class='bx bx-link-alt'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <img src="./public/tbm.jpg" class="img-project">
+                            <div class="desc-project">
+                                <h4>Calculadora Basal</h4>
+                                <p class="tex">
+                                    Aplicação desenvolvida em React.js que tem como objetivo calcular a taxa de metabolismo basal do usuário.
+                                </p>
+                                <a href="" class="btn-card-project">
+                                    Ver Projeto <i class='bx bx-link-alt'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-             </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
         </section>
     </main>
+   
     <footer>
         <p>Jonas D'angelo&copy;</p>
     </footer>
-    <script src="./js/index.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script> 
 </body>
 </html>

@@ -45,6 +45,7 @@ header {
     justify-content: space-between;
     width: 100%;
     padding: 1.5em;
+    background-color: #00111d;
 }
 
 #burguer {
@@ -160,7 +161,7 @@ header {
 
 img {
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
 }
 
 footer {
@@ -202,6 +203,7 @@ footer {
 .home-presentation button:hover{
     background-color: #002036;
     color: #fff;
+    transition: all .5s;
 } 
 
 .home-presentation ul {
@@ -220,12 +222,6 @@ footer {
     max-width: 100%;
 }
 
-/* .about{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
 .about {
     display: flex;
     padding: 4em 2em;
@@ -240,11 +236,18 @@ footer {
 .project {
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.img-project {
+    width: 100%;
 }
 
 .project-card {
     display: flex;
-    width: 85vw;
+    width: 100%;
+    height: 100%;
     padding: 2em;
     justify-content: center;
 }
@@ -275,6 +278,31 @@ footer {
     color: #000;
     font-size: 1.4em;
 }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+  }
+
+  /* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 
 @media screen and (max-width: 700px) {
     .desc-project {

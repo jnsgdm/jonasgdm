@@ -1,3 +1,5 @@
+// import '../js/swiper-bundle.min.js'
+
 var checkNav = false
 const navLinks = document.querySelector('#nav-links');
 function handleNavMobile(value) {
@@ -28,4 +30,18 @@ const contactLink = document.querySelector('#contact-link');
 contactLink.addEventListener('click',() => {
     navLinks.style.left = '-100%';
     console.log("teste cu");
+});
+
+let swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
 });
