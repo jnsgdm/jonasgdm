@@ -47,7 +47,8 @@ header {
     justify-content: space-between;
     width: 100%;
     padding: 1.5em;
-    background-color: #00111d;
+    background-color: #002036;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 #burguer {
@@ -73,6 +74,18 @@ header {
 
 .links li {
     padding: 0px 20px;
+}
+
+.first {
+    
+}
+
+.second {
+    background: linear-gradient(45deg, #FF8D29, #FF4848, #FFCD38);
+    background-size: 300%;
+    animation: lava-background 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .logo {
@@ -191,8 +204,11 @@ footer {
     border-radius: 1.2em;
     cursor: pointer;
     border: none;
-    background-color: #fff;
-    color: #000;
+    /* background-color: #fff; */
+    background: linear-gradient(45deg, #FF8D29, #FF4848, #FFCD38);
+    background-size: 300%;
+    animation: lava-background 5s linear infinite;
+    color: #fff;
 }
 
 .home-presentation button:hover{
@@ -204,7 +220,7 @@ footer {
 .home-presentation ul {
     display: flex;
     list-style-type: none;
-    margin-top: 1em;
+    /* margin-top: 1em; */
 }
 
 .home-presentation ul, i {
@@ -213,7 +229,7 @@ footer {
 } 
 
 .home-title {
-    margin-bottom: 1em;
+    margin-bottom: 0.4em;
     max-width: 100%;
 }
 
@@ -230,9 +246,11 @@ footer {
 }
 
 #seila {
-    background-color: #002036;
+    /* background-color: #002036; */
+    background: linear-gradient(45deg, #FF8D29, #FF4848, #FFCD38);;
     /* border-radius: 54% 46% 54% 46% / 74% 80% 20% 26% ; */
-    animation: portal-mov 5s linear infinite;
+    background-size: 300%;
+    animation: portal-bord 5s linear infinite;
 }
 
 .border-img-perfil {
@@ -240,8 +258,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 0.2em;
-    /* animation: portal-mov 5s linear infinite; */
-    background: linear-gradient(45deg, #FF8D29, #FF008E, #FFCD38);
+    background: linear-gradient(45deg, #FF8D29, #FF4848, #FFCD38);
     background-size: 300%;
     animation: portal-bord 5s linear infinite;
 }
@@ -285,6 +302,21 @@ footer {
 
     100% {
         border-radius: 60% 40% 54% 46% / 62% 65% 35% 38% ;
+        background-position:0%;
+    }
+}
+
+@keyframes lava-background{
+    0% {
+        background-position:0%;
+    }
+     
+    25% {
+        background-position: 100%;
+    }
+
+    100% {
+       
         background-position:0%;
     }
 }
