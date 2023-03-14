@@ -13,7 +13,6 @@ body {
     background-image: url("../public/stars.png");
     width: 100%;
     background-attachment: fixed;
-    overflow-x: hidden;
 }
 
 main {
@@ -22,12 +21,13 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .container {
     display: flex;
     color: #fff;
-    padding: 4.4em 2em;
+    padding: 5.5em 2em;
 }
 
 a {
@@ -38,10 +38,12 @@ a {
 header {
     width: 100%;
     position: fixed;
+    z-index: 2;
 }
 
 .nav {
     display: flex;
+    position: fixed;
     justify-content: space-between;
     width: 100%;
     padding: 1.5em;
@@ -97,7 +99,6 @@ header {
     display: none;
 }
 
-/* media queries */
 @media screen and (max-width: 700px) {
     #burguer{
         display: block;
@@ -105,10 +106,6 @@ header {
     
     .container {
         margin-top: 2em;
-    }
-
-    .nav{
-        background-color: #00111d;
     }
 
     .links{
@@ -172,21 +169,19 @@ footer {
     padding: 3.2em;
 }
 
+/* home */
 .home {
     justify-content: center;
     align-items: center;
     color: azure;
     width: 85vw;
+    height: 103vh;
 }
 
 .home-presentation {
     display: flex;
     flex-direction: column;
-    width: 100%;
-}
-
-#seila {
-    border-radius: 20em;
+    width: 85%;
 }
 
 .home-presentation button {
@@ -222,22 +217,88 @@ footer {
     max-width: 100%;
 }
 
+/* sobre */
+
 .about {
     display: flex;
     padding: 4em 2em;
+    margin-top: -1.5%;
     flex-direction: column;
-    width: 90vw;
+    width: 100%;
     height: 100%;
     background-color: #002036;
-    border-radius: 1.2em;
-    transition: all .5s;
 }
 
+#seila {
+    background-color: #002036;
+    /* border-radius: 54% 46% 54% 46% / 74% 80% 20% 26% ; */
+    animation: portal-mov 5s linear infinite;
+}
+
+.border-img-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2em;
+    /* animation: portal-mov 5s linear infinite; */
+    background: linear-gradient(45deg, #FF8D29, #FF008E, #FFCD38);
+    background-size: 300%;
+    animation: portal-bord 5s linear infinite;
+}
+
+@keyframes portal-mov {
+    0% {
+        border-radius: 60% 40% 54% 46% / 62% 65% 35% 38% ;
+    }
+     
+    25% {
+        border-radius: 56% 44% 51% 49% / 49% 54% 46% 51%; 
+    }
+    
+    50% {
+        border-radius: 56% 44% 51% 49% / 38% 39% 61% 62% ;
+    }
+    
+    /* 75% {
+        border-radius:  48% 52% 44% 56% / 44% 39% 61% 56% ;
+    } */
+
+    100% {
+        border-radius: 60% 40% 54% 46% / 62% 65% 35% 38% ;
+    }
+}
+
+@keyframes portal-bord {
+    0% {
+        border-radius: 60% 40% 54% 46% / 62% 65% 35% 38% ;
+        background-position:0%;
+    }
+     
+    25% {
+        border-radius: 56% 44% 51% 49% / 49% 54% 46% 51%; 
+        background-position: 100%;
+    }
+    
+    50% {
+        border-radius: 56% 44% 51% 49% / 38% 39% 61% 62% ;
+    }
+
+    100% {
+        border-radius: 60% 40% 54% 46% / 62% 65% 35% 38% ;
+        background-position:0%;
+    }
+}
+
+/* projects */
 .project {
     flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100%;
+}
+
+.mySwiper{
+    overflow: initial;
 }
 
 .img-project {
@@ -282,14 +343,15 @@ footer {
 .swiper {
     width: 100%;
     height: 100%;
-  }
+    z-index: 1;
+}
 
-  .swiper-slide {
+.swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2em;
-  }
+}
 
   /* .swiper-slide img {
     display: block;
@@ -298,10 +360,10 @@ footer {
     object-fit: cover;
   } */
 
-  .swiper {
+.swiper {
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
 
 @media screen and (max-width: 700px) {
