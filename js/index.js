@@ -1,4 +1,16 @@
-// import '../js/swiper-bundle.min.js'
+let swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+});
 
 var checkNav = false
 const navLinks = document.querySelector('#nav-links');
@@ -10,6 +22,17 @@ function handleNavMobile(value) {
         navLinks.style.left = '-100%';
     }
 };
+
+let a = document.querySelectorAll('.nav-link');
+a.forEach(e => {
+    e.addEventListener('click', function() {
+        a.forEach(n => {
+            n.classList.remove('active');
+            this.classList.add('active');
+            console.log('teste');
+        });
+    });
+});
 
 const aboutLink = document.querySelector('#about-link');
 aboutLink.addEventListener('click',() => {
@@ -32,27 +55,3 @@ contactLink.addEventListener('click',() => {
     console.log("teste cu");
 });
 
-let a = document.querySelectorAll('.nav-link');
-a.forEach(e => {
-    e.addEventListener('click', function() {
-        a.forEach(n => {
-            n.classList.remove('active');
-            this.classList.add('active');
-            console.log('teste');
-        });
-    });
-});
-
-let swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-});
