@@ -32,6 +32,17 @@ contactLink.addEventListener('click',() => {
     console.log("teste cu");
 });
 
+let a = document.querySelectorAll('.nav-link');
+a.forEach(e => {
+    e.addEventListener('click', function() {
+        a.forEach(n => {
+            n.classList.remove('active');
+            this.classList.add('active');
+            console.log('teste');
+        });
+    });
+});
+
 let swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
       spaceBetween: 30,

@@ -28,6 +28,10 @@ main {
     overflow: hidden;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .container {
     display: flex;
     color: #fff;
@@ -75,7 +79,11 @@ header {
 }
 
 .links a:hover { 
-    color: purple;
+    background: linear-gradient(45deg, #FF8D29, #FF4848, #FFCD38);
+    background-size: 300%;
+    animation: lava-background 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .links li {
@@ -86,7 +94,7 @@ header {
     
 }
 
-.second {
+.active {
     background: linear-gradient(45deg, #FF8D29, #FF4848, #FFCD38);
     background-size: 300%;
     animation: lava-background 5s linear infinite;
@@ -135,7 +143,7 @@ header {
         position: fixed;
         width: 100%; 
         background-color: #00111d;
-        top: 85px;
+        top: 68px;
         left: -100%;
         text-align: center;
         flex-direction: column;
@@ -250,7 +258,12 @@ footer {
 }
 
 .my-links {
-    padding-top: 1em;
+    /* padding-top: 1em; */
+    padding: .8em;
+}
+
+.my-links li {
+    font-size: 1.4em;
 }
 
 @media screen and (max-width: 700px ){
@@ -297,16 +310,9 @@ footer {
         padding: 1em 4em;
         width: 85vw;
     }
-
-    .my-links {
-        /* margin-top: 1em; */
-        /* font-size: 2em; */
-        /* margin-bottom: 1em; */
-    }
 }
 
 /* sobre */
-
 .about {
     display: flex;
     padding: 4em 2em;
@@ -455,6 +461,10 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 2em;
+}
+
+.swiper-button-next {
+    color: #fff;
 }
 
 .swiper {
