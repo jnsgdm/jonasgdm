@@ -14,14 +14,21 @@
 <body>
     <header class="nav-container">
         <nav class="nav">
-            <a href="#home" class="logo nav-link active">
-                <span class="first">Jonas</span>
+            <a href="#home" class="logo nav-link">
+                <span class="first">
+                    <div class="border-img-perfil">
+                        <p>teste</p>
+                    </div>
+                </span>
                 <!-- <span class="">D'angelo</span> -->
             </a>
 
             <i onclick="handleNavMobile()" class='bx bx-menu' id="burguer"></i>
 
             <ul class="links" id="nav-links" >
+                <li>
+                    <a href="#home" class="nav-link active" id="about-link" >Home</a>
+                </li>
                 <li>
                     <a href="#about" class="nav-link" id="about-link" >Sobre</a>
                 </li>
@@ -49,19 +56,36 @@
                     <span>Desenvolvedor de Softwares</span>
                     <p>Experiencia na producação de aplicativos web e automação de pequenas tarefas.</p>
                 </div>
+            
+                <ul class="my-links">
+                    <li>
+                        <a href="https://www.linkedin.com/in/jonasgdm/">
+                            <i class='bx bxl-linkedin-square' ></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/jnsgdm">
+                            <i class='bx bxl-github' ></i>
+                        </a>
+                    </li>
+                </ul>
+                
                 <button>Download CV</button>
             </div>
-            <ul class="my-links">
-                <li><a href="https://www.linkedin.com/in/jonasgdm/"><i class='bx bxl-linkedin-square' ></i></a></li>
-                <li><a href="https://github.com/jnsgdm"><i class='bx bxl-github' ></i></a></li>
-            </ul>
+
+            
             <div class="container-img-home">
                 <div class="border-img-perfil">
                     <img src="./public/perfil1.png" id="img-home">
                 </div>
             </div>
+            
         </section>
         
+        <!-- <section class="container about">
+
+        </section> -->
+
         <section class="container project" id="projects">
             <h3>PROJETOS RECENTES</h3>
             <div class="swiper mySwiper">
@@ -74,7 +98,7 @@
                                 <p class="tex">
                                     Aplicação desenvolvida em React.js que tem como objetivo calcular a taxa de metabolismo basal do usuário.
                                 </p>
-                                <a href="" class="btn-card-project">
+                                <a href="https://easytodo.vercel.app/" class="btn-card-project">
                                     Ver Projeto <i class='bx bx-link-alt'></i>
                                 </a>
                             </div>
@@ -88,7 +112,7 @@
                                 <p class="tex">
                                     Aplicação desenvolvida em React.js que tem como objetivo calcular a taxa de metabolismo basal do usuário.
                                 </p>
-                                <a href="" class="btn-card-project">
+                                <a href="https://bmrcalculator-virid.vercel.app/" class="btn-card-project">
                                     Ver Projeto <i class='bx bx-link-alt'></i>
                                 </a>
                             </div>
