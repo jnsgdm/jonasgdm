@@ -14,11 +14,12 @@
 <body>
     <header class="nav-container">
         <nav class="nav">
-            <a href="#home" class="logo nav-link">
+            <a href="#home" class="logo nav-link active">
                 <span class="first">
-                    <div class="border-img-perfil">
+                    <!-- <div class="border-img-perfil">
                         <p>teste</p>
-                    </div>
+                    </div> -->
+                    Jonas
                 </span>
                 <!-- <span class="">D'angelo</span> -->
             </a>
@@ -26,9 +27,9 @@
             <i onclick="handleNavMobile()" class='bx bx-menu' id="burguer"></i>
 
             <ul class="links" id="nav-links" >
-                <li>
+                <!-- <li>
                     <a href="#home" class="nav-link active" id="about-link" >Home</a>
-                </li>
+                </li> -->
                 <li>
                     <a href="#about" class="nav-link" id="about-link" >Sobre</a>
                 </li>
@@ -52,8 +53,8 @@
         <section class="container home" id="home">
             <div class="home-presentation">
                 <div class="home-title">
-                    <h1>Jonas D'angelo</h1>
-                    <span>Desenvolvedor de Softwares</span>
+                    <h1 class="title">Jonas D'angelo</h1>
+                    <span class="subtitle">Desenvolvedor de Softwares</span>
                     <p>Experiencia na producação de aplicativos web e automação de pequenas tarefas.</p>
                 </div>
             
@@ -87,14 +88,16 @@
         </section> -->
 
         <section class="container project" id="projects">
-            <h3>PROJETOS RECENTES</h3>
+            <h3 class="title">Projetos recentes</h3>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="project-card">
-                            <img src="./public/easytodo.jpg" class="img-project">
+                            <div class="container-project-img">
+                                <img src="./public/easytodo.jpg" class="img-project">
+                            </div>
                             <div class="desc-project">
-                                <h4>Calculadora Basal</h4>
+                                <h4 class="subtitle">Calculadora Basal</h4>
                                 <p class="tex">
                                     Aplicação desenvolvida em React.js que tem como objetivo calcular a taxa de metabolismo basal do usuário.
                                 </p>
@@ -106,9 +109,11 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="project-card">
-                            <img src="./public/tbm.jpg" class="img-project">
+                            <div class="container-project-img">
+                                <img src="./public/tbm.jpg" class="img-project">
+                            </div>
                             <div class="desc-project">
-                                <h4>Calculadora Basal</h4>
+                                <h4 class="subtitle">Calculadora Basal</h4>
                                 <p class="tex">
                                     Aplicação desenvolvida em React.js que tem como objetivo calcular a taxa de metabolismo basal do usuário.
                                 </p>
