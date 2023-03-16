@@ -56,7 +56,7 @@ p {
 .container {
     display: flex;
     color: #fff;
-    padding: 5.5em 2em;
+    padding: 5em 2em;
 }
 
 a {
@@ -66,7 +66,8 @@ a {
 header {
     width: 100%;
     position: fixed;
-    z-index: 2;
+    z-index: 10;
+    /* display: none; */
 }
 
 img {
@@ -80,6 +81,10 @@ footer {
     justify-content: center;
     font-size: 80%;
     padding: 3.2em;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 /* ANIMATIONS */
@@ -139,15 +144,6 @@ footer {
        
         background-position:0%;
     }
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-.bx-link-alt {
-    color: #fff;
-    font-size: 1.4em;
 }
 
 /* SWIPER */
@@ -262,27 +258,14 @@ footer {
     align-items: center;
     color: azure;
     width: 85vw;
-    height: 105vh;
-    padding: 8em;
+    height: 100vh;
+    padding: 0em 7em;
 }
 
 .home-presentation {
     display: flex;
     flex-direction: column;
     width: 100%;
-}
-
-/* .home-presentation h1 {
-    font-size: 300%;
-} */
-
-.home-presentation span {
-    padding-left: 0;
-    background: linear-gradient(45deg, #FF8D29, #FF4848, #FFCD38);
-    background-size: 300%;
-    animation: lava-background 5s linear infinite;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .home-title p {
@@ -408,6 +391,83 @@ footer {
     justify-content: space-between;
 }
 
+/* SOBRE */
+.about {
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.card-about {
+    display: flex;   
+}
+
+.desc-about {
+    /* background-color: #002036; */
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.desc-about p {
+    position: relative;
+    z-index: 4
+}
+
+.portal__lava {
+    position: fixed;
+    z-index: -1;
+    width: 6em;
+    height: 6em;
+}
+
+.um {
+    background: linear-gradient(45deg, #ff8d2954, #ff484852, #ffcd3857);
+    background-size: 300%;
+    animation: portal-bord 5s linear infinite;
+    left: 7.2%;
+    bottom: 70%;
+    animation: portal-bord 5s linear infinite;
+    /* width: 12em;
+    height: 12em; */
+} 
+
+.dois {
+    background: linear-gradient(45deg, #ff8d2954, #ff484852, #ffcd3857);;
+    background-size: 300%;
+    animation: portal-bord 5s linear infinite;
+    animation: portal-bord 5s linear infinite;
+    left: 50%;
+    bottom: 10%;
+    /* width: 12em; */
+    /* height: 22em; */
+}
+
+.tres {
+    background: linear-gradient(45deg, #ff8d2954, #ff484852, #ffcd3857);;
+    background-size: 300%;
+    animation: portal-bord 5s linear infinite;
+    animation: portal-bord 5s linear infinite;
+    left: 90%;
+    bottom: 70%;
+    /* width: 12em;
+    height: 12em; */
+}
+
+/* .quatro {
+    background: linear-gradient(45deg, #ff8d2954, #ff484852, #ffcd3857);;
+    background-size: 300%;
+    animation: portal-bord 5s linear infinite;
+    animation: portal-bord 5s linear infinite;
+    left: 40%;
+    bottom: 40%;
+} */
+
 /* MEDIA NAV */
 @media screen and (max-width: 700px) {
     #burguer{
@@ -469,7 +529,7 @@ footer {
     }
 
     .title{
-        font-size: 2.25em;
+        font-size: 2em;
     }
 
     /* .home-presentation span {
@@ -504,9 +564,9 @@ footer {
 }
 
 /* MEDIA PROJECT */
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 700px) {
     .project-card {
-        padding: 4em;
+        padding: 0;
     }
 
     .desc-project {
