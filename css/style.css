@@ -412,6 +412,8 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 0 8em;
+    flex-wrap: wrap;
 }
 
 .desc-about p {
@@ -464,8 +466,10 @@ footer {
     background-size: 300%;
     animation: portal-bord 5s linear infinite;
     animation: portal-bord 5s linear infinite;
-    left: 40%;
-    bottom: 40%;
+    left: 61%;
+    bottom: 25%;
+    width: 20em;
+    height: 20em;
 } */
 
 /* MEDIA NAV */
