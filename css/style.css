@@ -394,7 +394,8 @@ footer {
 .line {
     height: 100%;
     width: .4em;
-    background: linear-gradient(45deg, #FF8D29, #FF4848, #FFCD38);;
+    /* display: none; */
+    background: linear-gradient(45deg, #FF8D29, #FF4848, #FFCD38);
 }
 
 .card-about {
@@ -424,6 +425,11 @@ footer {
     z-index: -1;
     width: 6em;
     height: 6em;
+}
+
+.lamp {
+    width: 50%;
+    max-height: 70%;
 }
 
 @keyframes portal-mov {
@@ -489,6 +495,27 @@ footer {
     /* width: 15em;
     height: 15em; */
     /* animation: portal-mov 5s linear infinite; */
+}
+
+/* SKILL */
+.skill {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-skill {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.area-skill{
+    background: linear-gradient(45deg, #FF8D29, #FF4848, #FFCD38);
+    width: 300%;
+    height: 10%;
 }
 
 /* MEDIA NAV */
