@@ -419,7 +419,7 @@ footer {
     z-index: 4
 }
 
-.portal__lava {
+.portal_lava {
     position: fixed;
     z-index: -1;
     width: 6em;
@@ -451,7 +451,7 @@ footer {
 }
 
 .um {
-    background: linear-gradient(45deg, #ff8d2942, #ff48483d, #ffcd3848);
+    background: linear-gradient(45deg, #ff8d2915, #ff484823, #ffcd382c);
     background-size: 300%;
     animation: portal-bord 5s linear infinite;
     animation: portal-mov 5s linear infinite;
@@ -460,7 +460,7 @@ footer {
 } 
 
 .dois {
-    background: linear-gradient(45deg, #ff8d2942, #ff48483d, #ffcd3848);;
+    background: linear-gradient(45deg, #ff8d2915, #ff484823, #ffcd382c);;
     background-size: 300%;
     /* animation: portal-bord 5s linear infinite; */
     animation: portal-bord 5s linear infinite;
@@ -471,7 +471,7 @@ footer {
 }
 
 .tres {
-    background: linear-gradient(45deg, #ff8d2942, #ff48483d, #ffcd3848);;
+    background: linear-gradient(45deg, #ff8d2915, #ff484823, #ffcd382c);;
     background-size: 300%;
     /* animation: portal-bord 5s linear infinite; */
     animation: portal-bord 5s linear infinite;
