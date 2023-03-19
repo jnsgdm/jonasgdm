@@ -28,11 +28,11 @@
                 </li>
         
                 <li>
-                    <a href="#projects" class="nav-link" id="project-link" >Projetos</a>
-                </li>
-        
-                <li>
                     <a href="#skill" class="nav-link" id="skill-link" >Habilidades</a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="nav-link" id="project-link" >Projetos</a>
                 </li>
             </ul>
         </nav>
@@ -69,7 +69,7 @@
 
             <div class="container-img-home">
                 <div class="border-img-perfil">
-                    <img src="./public/perfil1.png" id="img-home">
+                    <img src="./public/img/perfil/perfil1.png" id="img-home">
                 </div>
             </div>
             
@@ -128,14 +128,14 @@
                             <path fill="url(#glass)" d="M 21 19 C 19 29 6 68 9 75 L 12 83 Q 30 88 48 83 L 51 75 C 54 68 41 29 39 19 Q 30 21 21 19" stroke="#ccc" stroke-width=".3" />
                         </svg> -->
                         <div class="line"></div>                        
-                        <p>
-                        Tenho 20 anos, atualmente foco na área de desenvolvimento web full stack, com experiência profissional de 1 ano produzindo novas funcionalidades e dando manutenção em plataformas que atendem grandes mercados atacadistas e varejistas.
-                        </p>
-                        <br>
-                        <div class="line"></div> 
-                        <p>
-                        Para solucionar problemas ou aprender novas tecnologias realizo projetos pessoais, sendo o mais autodidata possível, tirando minhas dúvidas em fóruns, documentações das tecnologias e em tutoriais.
-                        </p>
+                        <div>
+                            <p>
+                                Tenho 20 anos, curso o 4º semestre de Ciência da Computação, atualmente foco na área de desenvolvimento web full stack, com experiência profissional de 1 ano produzindo novas funcionalidades e dando manutenção em plataformas que atendem grandes mercados atacadistas e   varejistas.
+                            </p>
+                            <p>
+                                Para solucionar problemas ou aprender novas tecnologias realizo projetos pessoais, sendo o mais autodidata possível, tirando minhas dúvidas em fóruns, documentações das tecnologias e em tutoriais.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -144,10 +144,75 @@
         <section class="container skill" id="skill">
             <h3 class="title">Habilidades</h3>
             <div class="container-skill">
-                <button class="area-skill">teste</button>
-                <button class="area-skill">teste</button>   
-                <button class="area-skill">teste</button>
-                <div class="line"></div>
+                <div class="card-skill">
+                    <div class="skill-title">
+                        <span class="subtitle">Back-end</span>
+                    </div>
+                    <div class="skills">
+                        <div class="skill-data">
+                            <div class="skill-logo">
+                                <img src="./public/svg/backend/java.svg" alt="">
+                            </div>
+                            <h5 class="skill-name">Java</h5>
+                        </div>
+
+                        <div class="skill-data">
+                            <div class="skill-logo">
+                                <img src="./public/svg/backend/spring.svg" alt="">
+                            </div>
+                            <h5 class="skill-name">Spring Boot</h5>
+                        </div>
+                        
+                        <div class="skill-data">
+                            <div class="skill-logo">
+                                <img src="./public/svg/backend/microsoft-sql-server.svg" alt="">
+                            </div>
+                            <h5 class="skill-name">SLQ Server</h5>
+                        </div>
+                        
+                        <div class="skill-data">
+                            <div class="skill-logo">
+                                <img src="./public/svg/backend/mysql.svg" alt="">
+                            </div>
+                            <h5 class="skill-name">MySQL</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-skill">
+                    <div class="skill-title">
+                        <span class="subtitle">Front-end</span>
+                    </div>
+                    <div class="skills">
+                        <div class="skill-data">
+                            <div class="skill-logo">
+                                <img src="./public/svg/frontend/html-1.svg" alt="">
+                            </div>
+                            <h5 class="skill-name">MySQL</h5>
+                        </div>
+
+                        <div class="skill-data">
+                            <div class="skill-logo">
+                                <img src="./public/svg/frontend/html-1.svg" alt="">
+                            </div>
+                            <h5 class="skill-name">MySQL</h5>
+                        </div>
+
+                        <div class="skill-data">
+                            <div class="skill-logo">
+                                <img src="./public/svg/frontend/html-1.svg" alt="">
+                            </div>
+                            <h5 class="skill-name">MySQL</h5>
+                        </div>
+
+                        <div class="skill-data">
+                            <div class="skill-logo">
+                                <img src="./public/svg/frontend/html-1.svg" alt="">
+                            </div>
+                            <h5 class="skill-name">MySQL</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -158,7 +223,7 @@
                     <div class="swiper-slide">
                         <div class="project-card">
                             <div class="container-project-img">
-                                <img src="./public/easytodo.jpg" class="img-project">
+                                <img src="./public/img/project/freelacontrolapi.png" class="img-project">
                             </div>
                             <div class="desc-project">
                                 <h4 class="subtitle">EasytoDo</h4>
@@ -171,10 +236,28 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-slide">
                         <div class="project-card">
                             <div class="container-project-img">
-                                <img src="./public/tbm.jpg" class="img-project">
+                                <img src="./public/img/project/easytodo.jpg" class="img-project">
+                            </div>
+                            <div class="desc-project">
+                                <h4 class="subtitle">EasytoDo</h4>
+                                <p class="tex">
+                                    Aplicação desenvolvida em React.js que tem como objetivo calcular a taxa de metabolismo basal do usuário.
+                                </p>
+                                <a href="https://easytodo.vercel.app/" class="btn-card-project">
+                                    Ver Projeto <i class='bx bx-link-alt'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="container-project-img">
+                                <img src="./public/img/project/tbm.jpg" class="img-project">
                             </div>
                             <div class="desc-project">
                                 <h4 class="subtitle">Calculadora TMB</h4>
