@@ -499,10 +499,10 @@ footer {
 
 /* SKILL */
 .skill {
-    width: 100%;
+    width: 80%;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .title-area-skill {
@@ -513,14 +513,16 @@ footer {
 
 .container-skill{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 3em;
 }
 
 .skill-title{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-bottom: 2.5rem;
 }
 
@@ -530,21 +532,22 @@ footer {
 }
 
 .skills{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem 2rem;
+    padding: 2em;
 }
 
 .skill-data{
     justify-content: center;
     text-align: center;
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(45deg, #ff8d2921, #ff484818, #ffcd3823); */
 }
 
 .skill-logo{
     width: 80px;
     height: 100px;
-    background: linear-gradient(45deg, #ff8d297e, #ff48485d, #ffcd3869);
-    background-size: 300%;
-    animation: lava-background 5s linear infinite;
     border-radius: 3rem;
     place-items: center;
     margin-bottom: 1rem;
@@ -555,6 +558,12 @@ footer {
 
 .skill-logo img{
     width: 40px;
+}
+
+.line-skill {
+    height: 0.5%;
+    width: 100%;
+    background: linear-gradient(45deg, #FF8D29, #FF4848, #FFCD38);
 }
 
 /* MEDIA NAV */
